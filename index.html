@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let altura=prompt ("Insira a sua altura:" , " ");
+      console.log(altura);
+
+      let peso=prompt ("Insira o seu peso:" , " ");
+      console.log(peso);
+
+      let IMC = peso/(altura*altura);
+
+      let texto = " ";
+
+      if(IMC > 17.0 && IMC < 18.4)
+      {
+        texto = " Magreza grau I";
+      }
+      if(IMC > 18.5 && IMC <24.9)
+      {
+        texto = " Adequado";
+      }
+      if(IMC > 25.0 && IMC < 29.9)
+      {
+        texto = " Pré-Obeso";
+      }
+      if(IMC > 30 && IMC < 34.9)
+      {
+        texto = " Obesidade grau I";
+      }
+      
+
+        alert(" O seu IMC é: " + IMC.toFixed(2) + ". Portanto o seu peso é classificado em: " + texto + "."); 
+
+    </script>
+    
+</body>
+</html>
